@@ -1,0 +1,243 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --pad: 200px;
+}
+header{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+   width: 100%;
+   position: fixed;
+   z-index: 999;
+padding: 10px 100px;
+align-items: center;
+}
+.naveg a{
+    text-decoration:none ;
+    margin-left: 30px;
+    color: blueviolet;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-bottom: solid 2px transparent;
+}
+.logo{
+    text-decoration: none;
+text-transform: uppercase;
+color: blueviolet;
+font-weight: 700;
+font-size: 1.8em;
+}
+.naveg a:hover{
+    color: #601cfc;
+    border-bottom:#601cfc solid 2px ;
+}
+section{
+    padding: 80px 100px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAK8AugMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAGxABAQEAAgMAAAAAAAAAAAAAAAERUZEiMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aw0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFlxAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTN9WIAuVBduYCC7PsXx4vYOQAAAAAAAAAAAAAAAAAAAAAAAf/Z) ;
+  background-position: center;
+ background-attachment: fixed;
+}
+.content h2{
+font-size: 1.4em;
+font-weight: 500;
+color: white;
+}
+.content h2 span{
+    color: #601cfc;
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+}
+.content h3{
+    color: white;
+    font-weight: 700px;
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.content .main_btn {
+background-color: #601cfc;
+text-decoration: none;
+color: white;
+font-size: 1.1em;
+font-weight: 600;
+border-radius: 15px;
+display: inline-block;
+padding:0.9375em 2.1875em ;
+letter-spacing: 1px;
+margin-bottom: 40px;
+
+}
+.content .main_btn:hover{
+   background-color: blueviolet;
+   transition:0.7s ease;
+   scale: 1.1;
+}
+.content .social_icons a{
+
+    color:white;
+    padding-right: 20px;
+    font-size: 1.7em;
+}
+.content .social_icons{
+    margin-left: 40px;
+}
+.content .social_icons a:hover{
+    color:blueviolet
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    color:#601cfc;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.contaner{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  justify-content:center ;
+  
+}
+.card{
+    background-color: #f0f0f0;
+    width: 23.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    border-radius: 18px;
+    padding:25px;
+    margin:15px;
+   text-align: center;
+}
+.contaner :hover.card{
+    scale: 1.1;
+    transition:0.7s ease;
+}
+.card .icon {
+    color: #601cfc;
+    font-size: 5.2em;
+}
+.card h2 {
+    font-size: 20px;
+}
+.card .info h3{
+color: #601cfc;
+font-size: 1.2em;
+font-weight: 700;
+margin:10px;
+}
+.projects .title{
+    color:#601cfc;
+}
+.project_card{
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin:20px;
+    border:white solid 1px;
+    /* min-height: 12em; */
+    width:23em;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+.project_card:hover{
+    scale:1.1;
+    
+}
+
+.project_image {
+    height: 200px;
+}
+.project_image img{
+    width: 100%;
+    height: 100%;
+}
+.projects .contaner .project_card:hover .project_image{
+opacity: 0.9;
+}
+.contaner .project_info{
+    padding:0.6em;
+}
+strong {
+    display: flex;
+    align-items: center;
+}
+.project_info .project_category{
+font-size: 0.8em;
+color: #000000;
+}
+.project_info  a{
+    background-color: #000000;
+    color:white;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.project_title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    color:blueviolet
+}
+ .project_btn:hover{
+    color: blueviolet;
+}
+.projects{
+    background-color: #000000;
+   
+}
+.projects .contaner{
+    margin-top: 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    background-color: #000000;
+}
+footer h3{
+    color: white;
+    font-size: 1.4em;
+}
+footer h3 span{
+    color:#601cfc;
+}
+footer .social_icons i{
+    font-size: 1.8em;
+    padding-left: 20px;
+}
+footer i:hover {
+    color: blueviolet;
+    scale:1.1;
+}
+@media (max-width:1023px){
+
+header {
+    padding: 10px 30px;;
+}
+.naveg a{
+    font-size: 0.7em;
+    margin-left:10px;
+}
+.logo{
+    font-size:0.7em;
+}
+}
